@@ -1,0 +1,35 @@
+filenames {
+  base_map: "base_map.bin"
+  viz_map: "viz_map.bin"
+  topo_graph: "routing_map.bin"
+  semantic_map: "semantic_map.bin"
+}
+defaults {
+  start_location: {
+    x: 587258.060
+    y: 4140945.063
+  }
+}
+transforms {
+  utm {
+    zone: 10
+    north: true
+  }
+}
+terrain_config: { 
+  triangle_mesh: { 
+    obj_file_name: "Collision_simplified.obj"
+    mesh_scale: 0.01 
+    world_t_scaled_mesh: { 
+      px: 587258.060
+      py: 4140945.063
+      pz: 0.0 
+      rpy: { 
+        roll: 1.5707963267948966
+        #roll: 0.0
+        pitch: 0.0 
+        yaw: 0.0 
+      } 
+    } 
+  } 
+}
